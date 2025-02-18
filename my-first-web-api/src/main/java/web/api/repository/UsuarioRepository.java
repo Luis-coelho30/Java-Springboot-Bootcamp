@@ -1,6 +1,7 @@
 package web.api.repository;
 
 import org.springframework.stereotype.Repository;
+import web.api.handler.BusinessException;
 import web.api.model.Usuario;
 
 import java.util.ArrayList;
@@ -10,6 +11,9 @@ import java.util.List;
 public class UsuarioRepository {
 
     public void save(Usuario usuario){
+        if(usuario.getLogin()==null) throw new BusinessException("O campo login é obrigatório");
+        if(usuario.getPassword()==null) throw new BusinessException("O campo password é obrigatório");
+
         System.out.println("SAVE - Recebendo o usuário na camada de repositório");
         System.out.println(usuario);
     }
