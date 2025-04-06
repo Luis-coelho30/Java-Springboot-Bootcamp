@@ -1,5 +1,6 @@
-package com.spring_security_jwt;
+package com.spring_security_jwt.security;
 
+import com.spring_security_jwt.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

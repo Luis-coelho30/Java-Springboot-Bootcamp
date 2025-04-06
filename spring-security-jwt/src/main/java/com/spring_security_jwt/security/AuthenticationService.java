@@ -1,4 +1,4 @@
-package com.spring_security_jwt;
+package com.spring_security_jwt.security;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;

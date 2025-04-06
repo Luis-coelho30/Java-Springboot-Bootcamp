@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Chaves privadas e públicas
+/src/main/resources/keys
+
 ### STS ###
 .apt_generated
 .classpath
